@@ -55,18 +55,6 @@ input {
   margin: 0 auto;
 }
 
-.show {
-  visibility: visible;
-}
-
-.hide {
-  visibility: hidden;
-}
-
-.remove {
-  display: none;
-}
-
 .menu {
   box-sizing: border-box;
   width: 300px;

@@ -14,10 +14,6 @@ const colorPink = document.querySelector(".color-pink");
 
 const selected = document.querySelector(".selected");
 
-const show = (x) => x.classList.add("show");
-const hide = (x) => x.classList.add("hide");
-const remove = (x) => x.classList.add("remove");
-
 // Init
 
 input.focus();
@@ -68,10 +64,10 @@ function createGrid() {
         grid.style.border = "#44475a solid 1px";
         grid.style.width = `${954 / number}px`;
         grid.style.height = `${954 / number}px`;
-        etch.appendChild(grid);
         grid.addEventListener("mouseover", function () {
           grid.style.background = selected.style.background;
         });
+        etch.appendChild(grid);
       }
     }
     input.focus();
