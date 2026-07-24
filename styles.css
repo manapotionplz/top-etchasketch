@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+body {
+  color: #f8f8f2;
+  background-color: #282a36;
+  font-family: monospace;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+
+h1 {
+  color: #f8f8f2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 110px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+input {
+  all: unset;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  background-color: #f8f8f2;
+  border: #44475a solid 2px;
+  color: #282a36;
+  margin-bottom: 10px;
+}
+
+.etch {
+  display: flex;
+  box-sizing: border-box;
+  border: #f8f8f2 solid 3px;
+  flex-wrap: wrap;
+  width: 960px;
+  height: 960px;
+  /* center the div  */
+  margin: 0 auto;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.remove {
+  display: none;
+}
+
+.menu {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: #44475a;
+  border: solid #f8f8f2 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.color-picker {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.color-green,
+.color-orange,
+.color-blue,
+.color-pink {
+  width: 50px;
+  height: 50px;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-green {
+  border: solid #f8f8f2 3px;
+  border-radius: 3px;
+  background-color: #50fa7b;
+}
+
+.color-orange {
+  border: solid #f8f8f2 3px;
+  border-radius: 3px;
+  background-color: #ffb86c;
+}
+
+.color-blue {
+  border: solid #f8f8f2 3px;
+  border-radius: 3px;
+  background-color: #8be9fd;
+}
+
+.color-pink {
+  border: solid #f8f8f2 3px;
+  border-radius: 3px;
+  background-color: #ff79c6;
+}
+
+.selected {
+  width: 100px;
+  height: 100px;
+  border: solid #f8f8f2 3px;
+  border-radius: 3px;
+  background-color: #44475a;
+  margin-top: 20px;
+}
+
+h1 {
+  animation: float 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
