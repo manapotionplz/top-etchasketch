@@ -33,16 +33,20 @@ green.addEventListener("click", (e) => {
 function createGrid() {
   restartGrid();
   let userSize = Number(userInput.value);
-  for (let row = 0; row < userSize; row++) {
-    for (let column = 0; column < userSize; column++) {
-      const grid = document.createElement("div");
-      grid.classList.add("grid");
-      grid.style.width = `${954 / userSize}px`;
-      grid.style.height = `${954 / userSize}px`;
-      etch.appendChild(grid);
-      grid.addEventListener("mouseover", () => {
-        grid.style.backgroundColor = selectedColor.style.backgroundColor;
-      });
+  if (Number.isInteger(userSize) === false || userSize < 2 || userSize > 50) {
+    return alert("please enter a valid number between 2-50");
+  } else {
+    for (let row = 0; row < userSize; row++) {
+      for (let column = 0; column < userSize; column++) {
+        const grid = document.createElement("div");
+        grid.classList.add("grid");
+        grid.style.width = `${954 / userSize}px`;
+        grid.style.height = `${954 / userSize}px`;
+        etch.appendChild(grid);
+        grid.addEventListener("mouseover", () => {
+          grid.style.backgroundColor = selectedColor.style.backgroundColor;
+        });
+      }
     }
   }
 }
