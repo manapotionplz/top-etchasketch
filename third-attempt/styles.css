@@ -1,0 +1,108 @@
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #282a36;
+}
+
+button {
+  all: unset;
+  width: 100px;
+  height: 25px;
+  background-color: #f8f8f2;
+  border: 3px #8be9fd solid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input {
+  all: unset;
+  width: 50px;
+  height: 25px;
+  background-color: #f8f8f2;
+  border: 3px #50fa7b solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.etch-a-sketch {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  height: 960px;
+  border: #44475a solid 3px;
+}
+
+.grid {
+  border: #44475a solid 1px;
+}
+
+.selectedColor {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  border: solid 3px #f8f8f2;
+}
+
+.blue,
+.green {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  border: solid 3px #f8f8f2;
+}
+
+.blue {
+  background-color: #8be9fd;
+}
+
+.green {
+  background-color: #50fa7b;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.inputMenu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  justify-content: center;
+  margin: 25px;
+  gap: 10px;
+}
+
+.colorMenu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 110px;
+  justify-content: center;
+  margin: 25px;
+  gap: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #44475a;
+  height: 100vh;
+  width: 300px;
+
+  align-items: center;
+}
+
+.mainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+h1 {
+  margin-top: 10px;
+  color: #f8f8f2;
+}
